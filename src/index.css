@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.hero {
+  height: 100vh;
+  width: 99vw;
+  position: relative;
+  background: url("./assets/heroImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 100;
+}
+
+.hero-text > .title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #00a887;
+}
+
+.hero-text > .sub-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.intro {
+  height: 80vh;
+  text-align: center;
+}
+
+.intro > .sub-title {
+  font-size: 1.4rem;
+}
+
+.feature {
+  height: 100vh;
+}
+
+.feature-card .btn {
+  background-color: #00a887;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 800;
+}
+
+.feature-card .btn:hover {
+  background-color: #006e4f;
+  color: white;
+}
+
+.footer {
+  background-color: #006e4f;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-text > .title {
+    font-size: 2rem;
+  }
+
+  .fs-card,
+  .bs-card {
+    flex-direction: column;
+  }
+}
