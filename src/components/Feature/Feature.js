@@ -63,12 +63,13 @@ function Feature() {
       <div>
         <h1 className="text-center">EXPLORE THE TELR PAYMENT GATEWAY</h1>
         <div className="d-flex gap-2 pt-5 pb-5 fs-card">
-          {features.map((feature) => (
+          {features.map((feature, index) => (
             <FeatureCard
               img={feature.img}
               title={feature.title}
               points={feature.points}
               btn={feature.btn}
+              key={index}
             />
           ))}
         </div>

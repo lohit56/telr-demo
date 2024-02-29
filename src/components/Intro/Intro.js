@@ -35,11 +35,12 @@ function Intro() {
           popular networks, such as Visa, MasterCard, American Express and more.
         </p>
         <div className="d-flex pt-5 bs-card">
-          {benefits.map((benefit) => (
+          {benefits.map((benefit, index) => (
             <BenefitCard
               img={benefit.img}
               title={benefit.title}
               subtitle={benefit.subtitle}
+              key={index}
             />
           ))}
         </div>

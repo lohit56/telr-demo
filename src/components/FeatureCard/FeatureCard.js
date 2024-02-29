@@ -14,8 +14,10 @@ function FeatureCard({ img, title, points, btn }) {
           />
           <p class="text-center fw-bold pt-4 fs-5">{title}</p>
           <ul>
-            {points.map((point) => (
-              <li className="fs-5">{point}</li>
+            {points.map((point, index) => (
+              <li key={index} className="fs-5">
+                {point}
+              </li>
             ))}
           </ul>
         </div>
