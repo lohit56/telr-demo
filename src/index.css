@@ -47,6 +47,10 @@ code {
   z-index: 100;
 }
 
+.active {
+  color: #00a887;
+}
+
 .hero-text > .title {
   font-size: 5rem;
   font-weight: 700;
@@ -60,7 +64,7 @@ code {
 }
 
 .intro {
-  height: 80vh;
+  min-height: 70vh;
   text-align: center;
 }
 
@@ -69,7 +73,7 @@ code {
 }
 
 .feature {
-  height: 80vh;
+  min-height: 70vh;
 }
 
 .feature-card .btn {
@@ -97,5 +101,12 @@ code {
   .fs-card,
   .bs-card {
     flex-direction: column;
+  }
+
+  .intro {
+    min-height: 125vh !important;
+  }
+  .feature {
+    min-height: 150vh !important;
   }
 }

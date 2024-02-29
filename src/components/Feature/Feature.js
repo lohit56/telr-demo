@@ -62,7 +62,7 @@ function Feature() {
     <section className="container feature mt-5">
       <div>
         <h1 className="text-center">EXPLORE THE TELR PAYMENT GATEWAY</h1>
-        <div className="d-flex gap-2 fs-card">
+        <div className="d-flex gap-2 pt-5 pb-5 fs-card">
           {features.map((feature) => (
             <FeatureCard
               img={feature.img}

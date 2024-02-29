@@ -1,15 +1,15 @@
 import React from "react";
 import logo from "../../assets/logo.webp";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <Link class="navbar-brand" to={"/"}>
+        <NavLink className="navbar-brand" to={"/"}>
           <img src={logo} width={100} height={50} />
-        </Link>
+        </NavLink>
         <button
           class="navbar-toggler"
           type="button"
@@ -24,19 +24,32 @@ function Navbar() {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" to={"/"}>
+              <NavLink
+                activeClassName="active"
+                className="nav-link fw-bold"
+                aria-current="page"
+                to={"/"}
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to={"/about"}>
+              <NavLink
+                className="nav-link fw-bold"
+                activeClassName="active"
+                to={"/about"}
+              >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to={"/contact"}>
+              <NavLink
+                className="nav-link fw-bold"
+                activeClassName="active"
+                to={"/contact"}
+              >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
